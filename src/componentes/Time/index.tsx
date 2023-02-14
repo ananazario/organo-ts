@@ -1,6 +1,7 @@
 import { IColaborador } from '../../shared/interfaces/IColaborador'
 import Colaborador from '../Colaborador'
 import './Time.css'
+import React from 'react'
 
 interface TimeProps {
     corPrimaria: string 
@@ -26,7 +27,7 @@ const Time = (props: TimeProps) => {
                     /> )}
             </div>
         </section> 
-        : ''
+        : <React.Fragment></React.Fragment>
     )
 }
 
